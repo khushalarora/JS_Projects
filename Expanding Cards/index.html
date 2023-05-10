@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expanding Cards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card" id="card-1">
+        <h1 id="card1-text" class="text">Explore The World</h1>
+    </div>
+    <div class="card" id="card-2">
+        <h1 id="card2-text" class="text">Wild Forest</h1>
+    </div>
+    <div class="card" id="card-3">
+        <h1 id="card3-text" class="text">Sunny Beach</h1>
+    </div>
+    <div class="card" id="card-4">
+        <h1 id="card4-text" class="text">City On Winter</h1>
+    </div>
+    <div class="card" id="card-5">
+        <h1 id="card5-text" class="text">Mountains - Clouds</h1>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+<!-- The reason the transition is not working is because the display property is being set to 'block' immediately before the opacity transition begins.
+
+When the display property changes from 'none' to 'block', the element is immediately displayed without any transition, regardless of the transition properties that are set. This is because changing the display property affects the layout of the page, and so it cannot be transitioned like other CSS properties. 
+
+To achieve the desired result, you can use visibility property, this property can have 2 values '' or ''. If set to visibe, the element will be displayed normally and if set to hidden, the element is hidden but the space it was taking is still reserved.
+
+visibility: hidden;
+visibility: visible;
+-->
