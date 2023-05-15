@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+h1, h2{
+    font-family: 'Bruno Ace SC', cursive;
+    text-align: left;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    line-height: 25px;
+    margin: 15px 0px;
+    font-size: 14px;
+    cursor: text;
+}
+
+body{
+    background-color: aquamarine;
+    overflow-x: hidden;
+    background-color: #333;
+    color: #222;
+}
+
+.container {
+    background-color: #fafafa;
+    padding: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    transform-origin: top left;
+    position: relative;
+}
+
+.content {
+    margin: 55px auto;
+    max-width: 1000px;
+}
+
+.navigation-btn {
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+    float: left;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    position: fixed;
+    transform-origin: 0% 0%;
+    z-index: 2;
+}
+
+.menu {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-image: url('images/more.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: 22%;
+    right: 22%;
+    cursor: pointer;
+}
+
+.close {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-image: url('images/close_white.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: 22%;
+    left: 22%;
+    cursor: pointer;
+}
+
+
+.navbar{
+    position: fixed;
+    bottom: 200px;
+    left: 0;
+
+}
+.nav-logo{
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 1px 10px;
+}
+.nav-text{
+    font-size: 1rem;
+    color: #fafafa;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+#home-icon{
+    background-image: url('images/home.png');
+}
+#about-icon{
+    background-image: url('images/about.png');
+}
+#contact-icon{
+    background-image: url('images/contact.png');
+}
+.home,
+.about,
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 5px;
+}
+
+.home{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.about{
+    position: absolute;
+    top: 50px;
+    left: 25px;
+}
+.contact{
+    position: absolute;
+    top: 105px;
+    left: 50px;
+}
+
+.container,
+.navigation-btn{
+    transition: rotate 0.6s ease-in;
+}
+
+.home,
+.contact,
+.about{
+    transition: translate 0.5s ease-in;
+}
