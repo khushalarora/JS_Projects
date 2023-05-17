@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('backgground.avif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.percentage {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+}
+
+.cover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#btn {
+    padding: 10px;
+    background-color: aliceblue;
+}
+
+.loader {
+    width: 150px;
+    height: 70px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fafafa;
+    font-family: Ubuntu, sans-serif;
+}
