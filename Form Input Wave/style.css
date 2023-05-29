@@ -55,10 +55,6 @@ form{
     position: relative;
 }
 
-#email, #password, button, h3{
-    width: 70%;
-}
-
 #email{
     margin: 10px 0;
     width: 79%;
@@ -98,6 +94,11 @@ button{
     top: 203px;
     margin: 10px;
     cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+}
+
+button:active{
+    transform: scale(0.98);
 }
 
 p{
@@ -114,7 +115,7 @@ p{
 
 #email-label{
     position: absolute;
-    top: 42px;
+    /* top: 42px; */
     left: 40px;
 }
 
@@ -126,7 +127,7 @@ p{
 
 #password-label{
     position: absolute;
-    top: 135px;
+    /* top: 135px; */
     left: 40px;
 }
 
@@ -136,4 +137,42 @@ p{
     display: inline-block;
 }
 
-/* transform: translate(0, -30px); */
+/* #e,#m,#a,#i,#l,#p,#a,#s,#s,#w,#o,#r,#d{ */
+label span{
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+#email-label #e, 
+#password-label #p{
+    transition-delay: 0ms;
+}
+
+#email-label #m, 
+#password-label #a{
+    transition-delay: 50ms;
+}
+
+#email-label #a, 
+#password-label #s1{
+    transition-delay: 100ms;
+}
+
+#email-label #i, 
+#password-label #s2{
+    transition-delay: 150ms;
+}
+
+#email-label #l, 
+#password-label #w{
+    transition-delay: 200ms;
+}
+
+#password-label #o{
+    transition-delay: 250ms
+}
+#password-label #r{
+    transition-delay: 300ms
+}
+#password-label #d{
+    transition-delay: 350ms
+}
