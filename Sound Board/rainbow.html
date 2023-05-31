@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainbow Border</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #151320;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            width: 250px;
+            height: 250px;
+            border-radius: 5px;
+            box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .box::before {
+            content: "";
+            position: absolute;
+            width: 150%;
+            height: 150%;
+            left: -25%;
+            top: -25%;
+            background: conic-gradient(#fd004c, #fe9000, #fff020, #3edf4b, #3363ff, #b102b7, #fd004c);
+            animation: spin 0.5s ease 0s infinite;
+            animation-direction: normal;
+        }
+
+        .box::after {
+            content: "RAINBOW";
+            background-color: #1c1b29;
+            position: absolute;
+            height: 93%;
+            width: 93%;
+            top: 3.5%;
+            left: 3.5%;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+            color: #ffffff;
+            font-size: 20px;
+            letter-spacing: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        @keyframes spin {
+            0%{
+                transform: rotate(0deg);
+            }
+            25%{
+                transform: rotate(90deg);
+            }
+            50%{
+                transform: rotate(180deg);
+            }
+            75%{
+                transform: rotate(270deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>
